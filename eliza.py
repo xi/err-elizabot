@@ -5,7 +5,8 @@
 a cheezy little Eliza knock-off by Joe Strout <joe@strout.net>
 with some updates by Jeff Epler <jepler@inetnebr.com>
 hacked into a module and updated by Jez Higgins <jez@jezuk.co.uk>
-last revised: 28 February 2005"""
+and yet again overturned by Tobias Bengfort <tobias.bengfort@posteo.de>
+last revised: 24 May 2016"""
 
 import re
 import random
