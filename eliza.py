@@ -276,7 +276,10 @@ def main():
     s = ''
     while s != 'quit':
         try:
-            s = raw_input('>')
+            try:
+                s = raw_input('>')
+            except NameError:
+                s = input('>')
         except EOFError:
             s = 'quit'
             print(s)
