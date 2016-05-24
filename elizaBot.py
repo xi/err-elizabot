@@ -1,10 +1,9 @@
 import eliza
-from errbot import botcmd, BotPlugin
+from errbot import BotPlugin
 
 
 class ElizaBot(BotPlugin):
-    @botcmd
-    def eliza(self, _, args):
-        """ El'cheapo shrink for you """
-        args = args.strip()
-        return eliza.respond(args)
+    def callback_message(self, msg):
+        """El'cheapo shrink for you."""
+        if msg.to == self.bot_identifier:
+            self.send(msg.frm, eliza.respond(msg.body))
