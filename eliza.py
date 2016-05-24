@@ -11,6 +11,11 @@ last revised: 24 May 2016"""
 import re
 import random
 
+try:
+    import readline
+except ImportError:
+    pass
+
 REFLECTIONS = {
     'am': 'are',
     'was': 'were',
